@@ -7,8 +7,11 @@ const Footer = () => {
     <div className="Footer" id="footer">
       <div className="footer-content">
         <div className="footer-contant-left">
-        <h2>ABC Resturent</h2>
-        <p>`Let Food Be Thy Medicine and Medicine Be Thy Food`<br></br>since 2020</p>
+          <h2>ABC Resturent</h2>
+          <p>
+            `Let Food Be Thy Medicine and Medicine Be Thy Food`<br></br>since
+            2020
+          </p>
           <div className="footer-social-icons">
             <img src={assets.facebook_icon} alt="" />
             <img src={assets.twitter_icon} alt="" />
@@ -25,15 +28,17 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-contant-rigth">
-            <h2>Get in Touch</h2>
-            <ul>
-                <li>+9400000000</li>
-                <li>ABC@Example.com</li>
-            </ul>
+          <h2>Get in Touch</h2>
+          <ul>
+            <li>+9400000000</li>
+            <li>ABC@Example.com</li>
+          </ul>
         </div>
       </div>
-      <hr />
-      <p className="footer-copyrigth">Copyrigth 2024 © ABC.com - All Rigth Reserved.</p>
+      <hr/>
+      <p className ="footer-copyrigth">
+        Copyrigth 2024 © ABC.com - All Rigth Reserved.
+      </p>
     </div>
   );
 };

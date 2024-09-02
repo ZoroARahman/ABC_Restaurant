@@ -35,7 +35,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <hr/>
+      <hr />
       <p className ="footer-copyrigth">
         Copyrigth 2024 © ABC.com - All Rigth Reserved.
       </p>

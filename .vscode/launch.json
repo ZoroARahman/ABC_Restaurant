@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "name": "Admin",
+            "request": "launch",
+            "url": "http://localhost:5173/",
+            "webRoot": "${workspaceFolder}/admin"
+        },
+        {
+            "type": "chrome",
+            "name": "Frontend",
+            "request": "launch",
+            "url": "http://localhost:5173/",
+            "webRoot": "${workspaceFolder}/frontend"
+        }
+    ]
+}

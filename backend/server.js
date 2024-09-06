@@ -2,8 +2,10 @@
  import cors from "cors"
 import { connectDB } from "./config/db.js"
 import foodRouter from "./routes/foodRoute.js"
-import router from "./routes/reservationRoute.js"
+import Router from "./routes/reservationRoute.js"
 import { errorMiddleware } from "./middleware/middleware.js"
+import userRouter from "./routes/userRoute.js"
+import 'dotenv/config'
 
 
 
@@ -23,7 +25,8 @@ connectDB();
 // api endpoint
 app.use("/api/food",foodRouter)
 app.use("/images",express.static('uploads'))
-app.use('/api/v1/reservation',router)
+app.use("/api/user",userRouter)
+app.use('/api/v1/reservation',Router)
 
 app.get("/",(req,res)=>{
     res.send("Api working")

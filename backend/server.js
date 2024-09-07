@@ -6,13 +6,15 @@ import Router from "./routes/reservationRoute.js"
 import { errorMiddleware } from "./middleware/middleware.js"
 import userRouter from "./routes/userRoute.js"
 import 'dotenv/config'
+import cartRouter from "./routes/cartRoute.js"
+import orderRouter from "./routes/orderRoute.js"
 
 
 
 
 //  app config
 const app =express()
-const port=4001
+const port=4001;
 
 // middleware
 app.use(express.json())
@@ -26,7 +28,10 @@ connectDB();
 app.use("/api/food",foodRouter)
 app.use("/images",express.static('uploads'))
 app.use("/api/user",userRouter)
-app.use('/api/v1/reservation',Router)
+app.use("api/cart",cartRouter)
+app.use("/api/order",orderRouter)
+app.use("/api/v1/reservation",Router)
+
 
 app.get("/",(req,res)=>{
     res.send("Api working")

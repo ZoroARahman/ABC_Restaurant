@@ -25,6 +25,8 @@ const Navbar = ({setShowLogin}) => {
         <Link to='/' onClick={()=>setMenu("Home")}  className={menu==="Home"?"active":""}>Home</Link>
         <a href='#explore-menu' onClick={()=>setMenu("Menu")}  className={menu==="Menu"?"active":""}>Menu</a>
         <a href='#Reservation' onClick={()=>setMenu("Reservation")}  className={menu==="Reservation"?"active":""}>Reservation</a>
+        <a href='#Services' onClick={()=>setMenu("Services")}  className={menu==="Services"?"active":""}>Services</a>
+        <a href='#Gallery' onClick={()=>setMenu("Gallery")}  className={menu==="Gallery"?"active":""}>Gallery</a>
         <a href='#footer' onClick={()=>setMenu("Contact us")} className={menu==="Contact us"?"active":""}>Contact us</a>
       </ul>
       <div className="navbar-rigth">
